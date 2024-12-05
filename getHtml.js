@@ -25,7 +25,11 @@ function writeHTML(lines, config) {
   getHtml += "</div></body></html>";
 
   // Écriture du fichier HTML
-  fs.writeFileSync(path.join(__dirname, config.outputFile), getHtml, "utf-8");
+  fs.writeFileSync(
+    path.join(__dirname, "output", config.outputFile),
+    getHtml,
+    "utf-8"
+  );
 
   writeConfig(config, descriptionEntete, descriptionLigne);
 }
@@ -43,7 +47,7 @@ function writeConfig(config, descriptionEntete, descriptionLigne) {
 
   // Écriture du fichier HTML
   fs.writeFileSync(
-    path.join(__dirname, config.outputFileConfig),
+    path.join(__dirname, "output", config.outputFileConfig),
     getHtml,
     "utf-8"
   );

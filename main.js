@@ -41,7 +41,9 @@ let configs = [
 ];
 
 for (const config of configs) {
-  const lines = getData.getLines(path.join(__dirname, config.fileSource));
+  const lines = getData.getLines(
+    path.join(__dirname, "source-edi", config.fileSource)
+  );
 
   getHtml.writeHTML(lines, config);
 }
