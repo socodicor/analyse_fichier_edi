@@ -3,7 +3,7 @@ const path = require("path");
 const getData = require("./getData");
 
 function writeHTML(lines, config) {
-  const configFournisseur = require(`./${config.configFile}`);
+  const configFournisseur = require(`./configuration/${config.configFile}`);
 
   const descriptionEntete = getData.getDescriptionEntete(configFournisseur);
   const descriptionLigne = getData.getDescriptionLigne(configFournisseur);
