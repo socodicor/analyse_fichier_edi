@@ -54,6 +54,7 @@ function getTableauDescriptifConfig(libelle, colonnes) {
   html += "<th>Longueur</th>";
   html += "<th>Début</th>";
   html += "<th>Fin</th>";
+  html += "<th>Commentaire</th>";
   html += "</tr></thead><tbody>";
   for (const colonne of colonnes) {
     html += `<tr>`;
@@ -62,6 +63,7 @@ function getTableauDescriptifConfig(libelle, colonnes) {
     html += `<td>${colonne.length}</td>`;
     html += `<td>${colonne.start}</td>`;
     html += `<td>${colonne.end}</td>`;
+    html += `<td>${colonne.commentaire ?? ""}</td>`;
     html += `</tr>`;
   }
   html += "</tbody></table>";

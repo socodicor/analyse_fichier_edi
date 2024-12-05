@@ -24,6 +24,7 @@ function getDescriptionEntete(configFournisseur) {
       length: desc.length,
       start: position,
       end: position + desc.length - 1,
+      commentaire: desc.commentaire,
     });
     position = position + desc.length;
   }
@@ -42,6 +43,7 @@ function getDescriptionLigne(configFournisseur) {
       length: desc.length,
       start: position,
       end: position + desc.length - 1,
+      commentaire: desc.commentaire,
     });
     position += desc.length;
   }

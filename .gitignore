@@ -1,8 +1,18 @@
 audit-berner.html
 audit-symta.html
-config-berner.html
-config-symta.html
+audit-ocr-ff.html
+audit-ocr-avoir.html
+audit-ocr-bdc.html
+info-config-berner.html
+info-config-symta.html
+info-config-ocr-ff.html
+info-config-ocr-avoir.html
+info-config-ocr-bdc.html
+
 
 
 EDI-BERNER.22729
 EDI-SYMTA.22673
+ocr-avoir.asc
+ocr-bdc.asc
+ocr-ff.asc

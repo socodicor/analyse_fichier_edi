@@ -1,5 +1,5 @@
 const descriptionEntete = [
-  { name: "ENT", type: "string", length: 3 },
+  { name: "ENT", type: "string", length: 3, commentaire: "ENT" },
   { name: "ENT.NUMERO", type: "string", length: 9 },
   { name: "ENT.TIERSLU", type: "string", length: 35 },
   { name: "ENT.TIERSLIVRELU", type: "string", length: 35 },
@@ -20,7 +20,7 @@ const descriptionEntete = [
 module.exports.descriptionEntete = descriptionEntete;
 
 const descriptionLigne = [
-  { name: "LIG", type: "string", length: 3 },
+  { name: "LIG", type: "string", length: 3, commentaire: "LIG" },
   { name: "LIG.NUMLIGNELU", type: "string", length: 6 },
   { name: "LIG.ARTICLELU", type: "string", length: 35 },
   { name: "LIG.LIBELLELU", type: "string", length: 70 },
