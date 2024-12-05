@@ -5,10 +5,10 @@ const getData = require("./getData");
 let configs = [
   {
     name: "BERNER",
-    configFile: "config-berner",
-    fileSource: "EDI-BERNER.22729",
-    outputFile: "audit-berner.html",
-    outputFileConfig: "info-config-berner.html",
+    configFile: "config-berner", // fichier JS à la racine du projet
+    fileSource: "EDI-BERNER.22729", // fichier EDI dans le dossier source-edi
+    outputFile: "audit-berner.html", // fichier HTML exporté dans le dossier output avec les valeurs lues dans le fichier EDI
+    outputFileConfig: "info-config-berner.html", // fichier HTML exporté dans le dossier output avec le tableau de la configuration
   },
   {
     name: "SYMTA",
